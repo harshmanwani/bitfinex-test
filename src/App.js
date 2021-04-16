@@ -1,5 +1,7 @@
 import React from "react"
+import OrderBook from "./components/OrderBook"
 import Ticker from "./components/Ticker"
+import Trades from "./components/Trades"
 import { SOCKET_URL_PUB } from "./utils/config"
 
 class App extends React.Component {
@@ -30,10 +32,10 @@ class App extends React.Component {
 
     return (
       <div id="App">
-        <div id="order-book" className="dark-bg dark-border">Order Book</div>
+        <OrderBook />
         <div>
-          <Ticker/>
-          <div id="trade-list" className="dark-bg dark-border">Trades List</div>
+          <Ticker />
+          <Trades />
         </div>
       </div>
     );
