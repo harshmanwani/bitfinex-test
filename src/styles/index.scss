@@ -1,20 +1,63 @@
 body {
+  background-color: #273640;
+  color: #fff;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.dark-bg {
+  background-color: #1b262d;
+}
+
+.dark-border {
+  border: 1px solid #19232a;
+}
+
+.divider {
+  border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+}
+
+.text-light {
+  opacity: 0.6;
+}
+
+.text-sm {
+  font-size: 0.8rem;
+}
+
+.text-m {
+  font-size: 0.9rem;
+}
+
+.text-underline {
+  text-decoration: underline;
+  cursor: help;
+}
+
+.red {
+  color: #f05359;
+}
+
+.green {
+  color: #03ca9b;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
 }
 
 #App {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2.5fr 1fr;
   grid-template-rows: 1fr;
-  gap: 0px 0px;
+  gap: 1% 1%;
 }
