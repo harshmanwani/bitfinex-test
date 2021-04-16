@@ -27,7 +27,7 @@ const Ticker = ({ setTicker, tickerData }) => {
           <span>BTC/USD</span>
           <span className="text-sm">
             <span className="text-light">VOL </span>
-            <span className="text-underline">{tickerData[7]} </span>
+            <span className="text-underline">{Number(tickerData[7]).toFixed(4)} </span>
             <span className="text-light">USD</span>
           </span>
           <span className="text-sm">
@@ -38,7 +38,7 @@ const Ticker = ({ setTicker, tickerData }) => {
         <span className="ticker-price flex-column">
           <span>{tickerData[0]}</span>
           <span className="red text-m">
-            {tickerData[4]}
+            {Number(tickerData[4]).toFixed(2)}
           <ChevronDown size={14} />
           (2.99%)
         </span>

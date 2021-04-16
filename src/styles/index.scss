@@ -19,7 +19,7 @@ body {
 }
 
 .divider {
-  border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+  border-bottom: 1px solid #6464644d;
 }
 
 .text-light {
@@ -32,6 +32,14 @@ body {
 
 .text-m {
   font-size: 0.9rem;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
 }
 
 .text-underline {

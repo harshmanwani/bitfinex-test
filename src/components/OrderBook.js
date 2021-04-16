@@ -2,6 +2,7 @@ import React from 'react';
 import { ChevronDown } from 'react-feather';
 import '../styles/order-book.scss';
 import Footer from './Footer';
+import OrderTable from './OrderTable';
 
 const OrderBook = () => {
   return (
@@ -12,7 +13,11 @@ const OrderBook = () => {
         ORDER BOOK
         <span className="text-light text-m"> BTC/USD</span>
       </div>
-      <div className="table">table</div>
+      <div className="table">
+        <OrderTable />
+        &nbsp;
+        <OrderTable reverse/>
+      </div>
       <Footer />
     </div>
   );

@@ -2,6 +2,7 @@ import React from 'react';
 import { ChevronDown } from 'react-feather';
 import '../styles/trades.scss';
 import Footer from './Footer';
+import TradeList from './TradeList';
 
 const Trades = () => {
   return (
@@ -12,7 +13,7 @@ const Trades = () => {
         TRADES
         <span className="text-light text-m"> BTC/USD</span>
       </div>
-      <div className="trade-list">list</div>
+      <TradeList />
       <Footer />
     </div>
   );

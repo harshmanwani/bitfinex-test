@@ -1,6 +1,13 @@
 #trades {
   .trade-list {
     height: 72vh;
+    width: 100%;
+    overflow: auto;
+    table {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
   }
   .title {
     font-size: 0.9rem;
